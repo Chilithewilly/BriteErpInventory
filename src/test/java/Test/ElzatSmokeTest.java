@@ -9,9 +9,11 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import javax.swing.*;
+
 public class ElzatSmokeTest extends TestBase {
 
-    @Test
+    @Test(groups = "smoke")
     public void ProductMovePageTest() throws InterruptedException{
         HomePage homePage = new HomePage();
         InventoryPage inventoryPage = new InventoryPage();
@@ -36,7 +38,7 @@ public class ElzatSmokeTest extends TestBase {
 
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void SunnySunPageTest() throws InterruptedException{
         HomePage homePage = new HomePage();
         InventoryPage inventoryPage = new InventoryPage();
@@ -59,7 +61,7 @@ public class ElzatSmokeTest extends TestBase {
         System.out.println("SunnySunPageTest Passed");
     }
 
-    @Test
+    @Test(groups = "smoke")
     public void SunnySunAdvanceSearchTest() throws InterruptedException{
         HomePage homePage = new HomePage();
         InventoryPage inventoryPage = new InventoryPage();
@@ -83,7 +85,6 @@ public class ElzatSmokeTest extends TestBase {
         productMovePage.advancedSearchButton.click();
         Assert.assertTrue(productMovePage.advancedSearchOptions.isDisplayed());
         System.out.println("SunnySunAdvancedSearchTest Passed");
-        System.out.println("test");
 
     }
 }
