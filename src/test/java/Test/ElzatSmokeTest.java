@@ -31,6 +31,7 @@ public class ElzatSmokeTest extends TestBase {
         inventoryPage.productMove.click();
         Thread.sleep(5000);
         Assert.assertEquals(driver.getTitle(), "Product Moves - Odoo");
+        System.out.println("ProductMovePageTest Passed");
 
 
     }
@@ -55,6 +56,7 @@ public class ElzatSmokeTest extends TestBase {
         inventoryPage.sunnySun.click();
         Thread.sleep(5000);
         Assert.assertTrue(driver.getTitle().contains("YourCompany: SunnySun"));
+        System.out.println("SunnySunPageTest Passed");
     }
 
     @Test
@@ -80,6 +82,7 @@ public class ElzatSmokeTest extends TestBase {
         Assert.assertEquals(driver.getTitle(), "Product Moves - Odoo");
         productMovePage.advancedSearchButton.click();
         Assert.assertTrue(productMovePage.advancedSearchOptions.isDisplayed());
+        System.out.println("SunnySunAdvancedSearchTest Passed");
 
     }
 }
