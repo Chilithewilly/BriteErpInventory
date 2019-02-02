@@ -83,6 +83,7 @@ public class ElzatSmokeTest extends TestBase {
         productMovePage.advancedSearchButton.click();
         Assert.assertTrue(productMovePage.advancedSearchOptions.isDisplayed());
         System.out.println("SunnySunAdvancedSearchTest Passed");
+        System.out.println("test");
 
     }
 }
