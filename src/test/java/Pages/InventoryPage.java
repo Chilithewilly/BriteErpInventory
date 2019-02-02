@@ -23,8 +23,7 @@ public class InventoryPage {
     @FindBy(xpath = "(//a[@href='/web#menu_id=376&action=516'])")
     public WebElement productMove;
 
-
-    @FindBy(xpath = "/html/body/div[1]/div[2]/div[2]/div/div/div/div[9]/div/div[1]/div[1]/div[1]/a")
+    @FindBy(xpath = "(//a[@class=' oe_kanban_action oe_kanban_action_a']//span)[8]")
     public WebElement sunnySun;
 
 

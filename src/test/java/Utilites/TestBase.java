@@ -15,6 +15,7 @@ public abstract class TestBase {
     public void set(){
         driver= Driver.getDriver();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(15,TimeUnit.SECONDS);
 
     }
 
