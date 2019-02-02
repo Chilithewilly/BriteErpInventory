@@ -1,4 +1,4 @@
-package Utilites;
+package Test;
 
 import Pages.HomePage;
 import Utilites.ConfigurationReader;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class Login extends TestBase {
 
-
+    @Test
     public void signInTest(){
         HomePage homePage =new HomePage();
         driver.get(ConfigurationReader.getProperty("url"));

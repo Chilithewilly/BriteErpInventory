@@ -6,10 +6,12 @@ import Utilites.ConfigurationReader;
 import Utilites.TestBase;
 import org.testng.annotations.Test;
 
+
+
 public class DashboardV extends TestBase {
 
     @Test
-    public void DeliveryOrdersMyCompany(){
+    public void DeliveryOrdersMyCompany() {
         HomePage homePage =new HomePage();
         InventoryPage inventoryPage= new InventoryPage();
         driver.get(ConfigurationReader.getProperty("url"));
@@ -20,6 +22,7 @@ public class DashboardV extends TestBase {
         homePage.InventoryPage.click();
         inventoryPage.Dashborad.click();
         inventoryPage.DeliveryOrders.click();
+
     }
 
     @Test
