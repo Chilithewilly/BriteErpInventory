@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class ZulhumarSmokeTest extends TestBase {
 
 
-    @Test
+    @Test(groups = "smoke")
     public void  ConfigurationTest(){
 
             HomePage homePage = new HomePage();
@@ -33,6 +33,7 @@ public class ZulhumarSmokeTest extends TestBase {
 
         softAssert.assertEquals(beforeClick,afterClick);
 
+
         configurationPage.products.click();
         String afterclick2= driver.getTitle();
 
@@ -40,7 +41,7 @@ public class ZulhumarSmokeTest extends TestBase {
 
         }
 
-     @Test
+     @Test(groups = "smoke")
     public void WarehousesTest() throws InterruptedException {
          HomePage homePage = new HomePage();
          driver.get(ConfigurationReader.getProperty("url"));
@@ -58,6 +59,7 @@ public class ZulhumarSmokeTest extends TestBase {
          softAssert.assertTrue(configurationPage.operationTypes.isDisplayed());
 
          String beforeClick = driver.getTitle();
+         Thread.sleep(5000);
          configurationPage.warehouses.click();
          String afterClick = driver.getTitle();
 

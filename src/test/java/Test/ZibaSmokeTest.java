@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class ZibaSmokeTest extends TestBase {
 
-    @Test
+    @Test(groups = "smoke")
     public void ReceiptsPageTest() throws InterruptedException {
         HomePage homePage = new HomePage();
         InventoryPage inventoryPage = new InventoryPage();
@@ -32,7 +32,7 @@ public class ZibaSmokeTest extends TestBase {
     }
 
 
-    @Test
+    @Test(groups = "smoke")
     public void AdvancedSearchTest() throws InterruptedException {
         HomePage homePage = new HomePage();
         InventoryPage inventoryPage = new InventoryPage();

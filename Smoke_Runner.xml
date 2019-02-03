@@ -10,6 +10,9 @@
 
         <classes>
             <class name="Test.ElzatSmokeTest"/>
+            <class name="Test.DashboardV"/>
+            <class name="Test.ZibaSmokeTest"/>
+            <class name="Test.ZulhumarSmokeTest"/>
         </classes>
     </test>
 </suite>
