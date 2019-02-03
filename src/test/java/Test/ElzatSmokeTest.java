@@ -82,7 +82,7 @@ public class ElzatSmokeTest extends TestBase {
         Assert.assertEquals(driver.getTitle(), "Product Moves - Odoo");
         productMovePage.advancedSearchButton.click();
         Assert.assertTrue(productMovePage.advancedSearchOptions.isDisplayed());
-        System.out.println("SunnySunAdvancedSearchTest Passed");
+        System.out.println("SunnySunAdvancedSea rchTest Passed");
         System.out.println("test");
 
     }

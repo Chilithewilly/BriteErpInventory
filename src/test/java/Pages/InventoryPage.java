@@ -26,5 +26,12 @@ public class InventoryPage {
     @FindBy(xpath = "(//a[@class=' oe_kanban_action oe_kanban_action_a']//span)[8]")
     public WebElement sunnySun;
 
+    @FindBy(xpath = "(//a[@class=' oe_kanban_action oe_kanban_action_a']//span)[2]")
+    public WebElement Receipts;
 
+    @FindBy(xpath = "(//span[@class='o_searchview_more fa fa-search-plus'])")
+    public WebElement advancedSearchButton;
+
+    @FindBy(xpath = "(//div[@class='btn-group o_search_options'])")
+    public WebElement advancedSearchOptions;
 }
