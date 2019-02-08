@@ -24,7 +24,7 @@ public class ZulhumarSmokeTest extends TestBase {
 
 
              ConfigurationPage configurationPage = new ConfigurationPage();
-        softAssert.assertTrue(configurationPage.configurationButton.isDisplayed());
+             softAssert.assertTrue(configurationPage.configurationButton.isDisplayed());
 
 
         String beforeClick = driver.getTitle();

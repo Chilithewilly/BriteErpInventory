@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 
-public class HomePage extends TestBase {
+public class HomePage {
 
     public HomePage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -39,7 +39,7 @@ public class HomePage extends TestBase {
 
     public static void log(){
         HomePage homePage =new HomePage();
-        driver.get(ConfigurationReader.getProperty("url"));
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
         homePage.DatabaseDropDown.click();
         homePage.username.sendKeys(ConfigurationReader.getProperty("username"));
         homePage.password.sendKeys(ConfigurationReader.getProperty("password"));
